@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cp ~/.bash_profile ./home/.bash_profile
+cp ~/.gitconfig ./home/.gitconfig
+cp ~/.tmux.conf ./home/.tmux.conf
+cp ~/.vimrc ./home/.vimrc
