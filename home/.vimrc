@@ -18,8 +18,9 @@ map . gt
 map , gT
 map > :tabm +<cr>
 map < :tabm -<cr>
-map n :cprev<cr>
-map m :cnext<cr>
+map N :tabnew<cr>
+map H :cprev<cr>
+map L :cnext<cr>
 map F :Ag 
 map <C-n> :NERDTreeToggle<CR>
 
