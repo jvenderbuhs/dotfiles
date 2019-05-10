@@ -18,6 +18,8 @@ alias dcssh="docker exec -it $( docker ps -q -f name=webapp -l ) bash"
 alias dps="docker ps"
 alias rps="rancher ps"
 alias tm="tmux -2"
+alias rit='rancher exec -it'
+alias dit='docker exec -it'
 
 cd ~/.ssh
 ssh-add bitbucket
@@ -27,3 +29,4 @@ ssh-add gitlab
 ssh-add id_rsa
 cd ~/Development
 clear
+echo "'tmux a -t dev' to connect to session"

@@ -4,9 +4,15 @@ cp ./home/.bash_profile ~/.bash_profile
 cp ./home/.gitconfig ~/.gitconfig 
 cp ./home/.tmux.conf ~/.tmux.conf
 cp ./home/.vimrc ~/.vimrc
+cp ./home/.agignore ~/.agignore
 
 echo "----------------------------------------------------------------------------------"
 echo "| Ensure the following were run at some point on this machine:                   |"
 echo "| git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim |"
 echo "| Log into vim and run ':PluginInstall'                                          |"
+echo "|--------------------------------------------------------------------------------|"
+echo "| The Following Programs Should be Present:                                      |"
+echo "| - the_silver_searcher                                                          |"
+echo "| - tmux                                                                         |"
+echo "| - vim                                                                          |"
 echo "----------------------------------------------------------------------------------"

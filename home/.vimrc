@@ -18,6 +18,9 @@ map . gt
 map , gT
 map > :tabm +<cr>
 map < :tabm -<cr>
+map n :cprev<cr>
+map m :cnext<cr>
+map F :Ag 
 map <C-n> :NERDTreeToggle<CR>
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -27,6 +30,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'ervandew/ag'
 
 call vundle#end()
 filetype plugin indent on
