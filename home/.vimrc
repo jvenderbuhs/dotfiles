@@ -22,6 +22,7 @@ map N :tabnew<cr>
 map H :cprev<cr>
 map L :cnext<cr>
 map F :Ag 
+map <C-[> :CtrlPClearCache<CR>
 map <C-n> :NERDTreeToggle<CR>
 
 set rtp+=~/.vim/bundle/Vundle.vim
