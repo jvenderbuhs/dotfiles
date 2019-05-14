@@ -29,4 +29,3 @@ ssh-add gitlab
 ssh-add id_rsa
 cd ~/Development
 clear
-echo "'tmux a -t dev' to connect to session"
