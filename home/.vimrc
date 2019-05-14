@@ -13,7 +13,8 @@ set ai
 set si
 map <space> /
 map <c-space> ?
-map 0 ^
+map } 0i<space><space><Esc>
+map { 0xx
 map . gt
 map , gT
 map > :tabm +<cr>
