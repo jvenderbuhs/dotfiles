@@ -9,7 +9,6 @@ parse_git_branch() {
 export PS1="JVM @ \W\$(parse_git_branch) $ "
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-alias gitl='git log --pretty=format:"%h%x09%an%x09%x09%s" | head'
 alias githead='git log | head -n 1'
 alias rngr='ranger -c'
 alias dcup="docker-compose down;rm tmp/pids/server.pid; docker-compose up"
