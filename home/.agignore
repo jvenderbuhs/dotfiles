@@ -23,3 +23,8 @@
 *.log
 *.yml
 *.yaml
+*.jpg
+*.jpeg
+*.png
+*.ico
+*.gif
