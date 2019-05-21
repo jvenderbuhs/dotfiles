@@ -7,3 +7,5 @@
   date = short
 [format]
   pretty = format:%C(yellow)%h %C(magenta)%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s
+[core]
+  excludesfile = ~/.gitignore

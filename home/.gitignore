@@ -1,0 +1,36 @@
+# Editor Files
+
+*.swp
+*.swo
+
+# Database
+
+*.sqlite3
+*.sqlite3-journal
+*.sql
+*.csv
+config/database.override.yml
+
+# Logs
+
+*.log
+
+# Uploads / Cache
+
+public/system/*
+public/themes/*
+public/javascripts/cache
+public/stylesheets/cache
+public/refinery/*
+vendor/cache
+
+# Misc
+
+/.bundle
+/tmp
+tmp
+/tmp/**/*
+.yardoc
+.yardopts
+.DS_Store
+Thumbs.db
