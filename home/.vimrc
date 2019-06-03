@@ -44,3 +44,5 @@ let g:ctrlp_prompt_mappings = {
   \ }
 
 set wildignore+=*/tmp/*,*.so,*.js*,*.swp,*.sql,*.zip,*.html,*/site-images/*,*/node_modules/*
+
+autocmd BufWritePre * :%s/\s\+$//e
