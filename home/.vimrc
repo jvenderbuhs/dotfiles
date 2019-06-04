@@ -4,7 +4,6 @@ set history=500
 set ruler
 set hlsearch
 syntax enable
-colorscheme desert
 set expandtab
 set smarttab
 set shiftwidth=2
@@ -36,6 +35,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/ag'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'zacanger/angr.vim'
 
 call vundle#end()
 
