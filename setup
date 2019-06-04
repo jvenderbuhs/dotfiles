@@ -1,9 +1,10 @@
 #!/bin/bash
 
-cp ./home/.bash_profile ~/.bash_profile 
-cp ./home/.gitconfig ~/.gitconfig 
+cp ./home/.bash_profile ~/.bash_profile
+cp ./home/.gitconfig ~/.gitconfig
 cp ./home/.gitignore ~/.gitignore
 cp ./home/.tmux.conf ~/.tmux.conf
+cp ./home/.tmux/dev ~/.tmux/dev
 cp ./home/.vimrc ~/.vimrc
 cp ./home/.agignore ~/.agignore
 

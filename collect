@@ -4,5 +4,6 @@ cp ~/.bash_profile ./home/.bash_profile
 cp ~/.gitconfig ./home/.gitconfig
 cp ~/.gitignore ./home/.gitignore
 cp ~/.tmux.conf ./home/.tmux.conf
+cp ~/.tmux/dev ./home/.tmux/dev
 cp ~/.vimrc ./home/.vimrc
 cp ~/.agignore ./home/.agignore
