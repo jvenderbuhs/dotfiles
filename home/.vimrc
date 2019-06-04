@@ -22,7 +22,7 @@ map < :tabm -<cr>
 map N :tabnew<cr>
 map H :cprev<cr>
 map L :cnext<cr>
-map F :Ag 
+map F :Ag
 map <C-[> :CtrlPClearCache<CR>
 map <C-n> :NERDTreeToggle<CR>
 
@@ -34,6 +34,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/ag'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 
@@ -42,6 +44,8 @@ let g:ctrlp_prompt_mappings = {
   \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
   \ 'AcceptSelection("t")': ['<cr>'],
   \ }
+
+let g:airline_theme='angr'
 
 set wildignore+=*/tmp/*,*.so,*.js*,*.swp,*.sql,*.zip,*.html,*/site-images/*,*/node_modules/*
 
