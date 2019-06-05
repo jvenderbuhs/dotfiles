@@ -10,6 +10,9 @@ set shiftwidth=2
 set tabstop=2
 set ai
 set si
+set cursorline
+hi CursorLine cterm=NONE ctermbg=darkred guibg=darkred
+
 map <space> /
 map <c-space> ?
 map } 0i<space><space><Esc>
