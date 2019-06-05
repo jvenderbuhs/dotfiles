@@ -15,16 +15,13 @@ hi CursorLine cterm=NONE ctermbg=darkred guibg=darkred
 
 map <space> /
 map <c-space> ?
-map } 0i<space><space><Esc>
-map { 0xx
+map } :tabm +<cr>
+map { :tabm -<cr>
 map . gt
 map , gT
-map > :tabm +<cr>
-map < :tabm -<cr>
 map N :tabnew<cr>
 map H :cprev<cr>
 map L :cnext<cr>
-map F :Ag
 map <C-[> :CtrlPClearCache<CR>
 map <C-n> :NERDTreeToggle<CR>
 
@@ -53,3 +50,8 @@ let g:airline_theme='angr'
 set wildignore+=*/tmp/*,*.so,*.js*,*.swp,*.sql,*.zip,*.html,*/site-images/*,*/node_modules/*
 
 autocmd BufWritePre * :%s/\s\+$//e
+
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
