@@ -1,6 +1,7 @@
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/.rancher"
+export PATH="$PATH:$HOME/.helpers"
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'

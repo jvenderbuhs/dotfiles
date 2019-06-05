@@ -4,7 +4,10 @@ cp ./home/.bash_profile ~/.bash_profile
 cp ./home/.gitconfig ~/.gitconfig
 cp ./home/.gitignore ~/.gitignore
 cp ./home/.tmux.conf ~/.tmux.conf
+mkdir ~/.tmux
 cp ./home/.tmux/dev ~/.tmux/dev
+mkdir ~/.helpers
+cp ./home/.helpers/battery ~/.helpers/battery
 cp ./home/.vimrc ~/.vimrc
 cp ./home/.agignore ~/.agignore
 

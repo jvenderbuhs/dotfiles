@@ -5,5 +5,6 @@ cp ~/.gitconfig ./home/.gitconfig
 cp ~/.gitignore ./home/.gitignore
 cp ~/.tmux.conf ./home/.tmux.conf
 cp ~/.tmux/dev ./home/.tmux/dev
+cp ~/.helpers/battery ./home/.helpers/battery
 cp ~/.vimrc ./home/.vimrc
 cp ~/.agignore ./home/.agignore
