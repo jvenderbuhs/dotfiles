@@ -11,7 +11,7 @@ set tabstop=2
 set ai
 set si
 set cursorline
-hi CursorLine cterm=NONE ctermbg=darkred guibg=darkred
+hi CursorLine cterm=NONE ctermbg=8 guibg=8
 
 map <space> /
 map <c-space> ?
