@@ -36,6 +36,7 @@ Plugin 'ervandew/ag'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'zacanger/angr.vim'
+Plugin 'tomtom/tcomment_vim'
 
 call vundle#end()
 
