@@ -17,8 +17,8 @@ map <space> /
 map <c-space> ?
 map } :tabm +<cr>
 map { :tabm -<cr>
-map . gt
-map , gT
+map ] gt
+map [ gT
 map N :tabnew<cr>
 map H :cprev<cr>
 map L :cnext<cr>
