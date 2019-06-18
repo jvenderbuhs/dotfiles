@@ -24,6 +24,7 @@ map H :cprev<cr>
 map L :cnext<cr>
 map <C-[> :CtrlPClearCache<CR>
 map <C-n> :NERDTreeToggle<CR>
+map B :Gblame<CR>
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -37,6 +38,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'zacanger/angr.vim'
 Plugin 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 
