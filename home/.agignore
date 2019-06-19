@@ -1,10 +1,10 @@
-/log/
-/logs/
-/images/
-/javascripts/
-/stylesheets/
-/node_modules/
-/tmp/
+log/
+logs/
+images/
+javascripts/
+stylesheets/
+node_modules/
+tmp/
 *.sql
 *.csv
 *.tsv
