@@ -50,7 +50,7 @@ let g:ctrlp_prompt_mappings = {
 
 let g:airline_theme='angr'
 
-set wildignore+=*/tmp/*,*.so,*.js*,*.swp,*.sql,*.zip,*.html,*/site-images/*,*/node_modules/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.sql,*.zip,*.html,*/site-images/*,*/node_modules/*,*/javascript/*/lib/*
 
 autocmd BufWritePre * :%s/\s\+$//e
 
