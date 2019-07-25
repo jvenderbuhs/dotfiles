@@ -13,8 +13,6 @@ set si
 set cursorline
 hi CursorLine cterm=NONE ctermbg=8 guibg=8
 
-map <space> /
-map <c-space> ?
 map } :tabm +<cr>
 map { :tabm -<cr>
 map ] gt
