@@ -11,3 +11,5 @@
   excludesfile = ~/.gitignore
 [alias]
   logg = log --graph
+[pull]
+	rebase = true

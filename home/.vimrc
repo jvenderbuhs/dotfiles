@@ -13,13 +13,13 @@ set si
 set cursorline
 hi CursorLine cterm=NONE ctermbg=8 guibg=8
 
-map } :tabm +<cr>
-map { :tabm -<cr>
+map } :tabm +<CR>
+map { :tabm -<CR>
 map ] gt
 map [ gT
-map N :tabnew<cr>
-map H :cprev<cr>
-map L :cnext<cr>
+map N :tabnew<CR>
+map H :cprev<CR>
+map L :cnext<CR>
 map <C-[> :CtrlPClearCache<CR>
 map <C-n> :NERDTreeToggle<CR>
 map B :Gblame<CR>
