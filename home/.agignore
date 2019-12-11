@@ -1,11 +1,9 @@
 log/
 logs/
 images/
-javascripts/
 stylesheets/
 node_modules/
 tmp/
-javascript/*/lib/
 *.sql
 *.csv
 *.tsv
@@ -23,3 +21,4 @@ javascript/*/lib/
 *.gif
 *.ts
 *.map
+lib/
