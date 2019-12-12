@@ -56,3 +56,8 @@ nnoremap <Up> <Nop>
 nnoremap <Down> <Nop>
 nnoremap <Left> <Nop>
 nnoremap <Right> <Nop>
+
+hi DiffAdd    cterm=BOLD ctermfg=NONE ctermbg=22
+hi DiffDelete cterm=BOLD ctermfg=NONE ctermbg=52
+hi DiffChange cterm=BOLD ctermfg=NONE ctermbg=23
+hi DiffText   cterm=BOLD ctermfg=NONE ctermbg=23
