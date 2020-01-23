@@ -1,5 +1,4 @@
 #!/bin/bash
-
 cp ./home/.bash_profile ~/.bash_profile
 cp ./home/.gitconfig ~/.gitconfig
 cp ./home/.gitignore ~/.gitignore
@@ -8,19 +7,15 @@ mkdir ~/.tmux
 cp ./home/.tmux/dev ~/.tmux/dev
 mkdir ~/.helpers
 cp ./home/.helpers/battery ~/.helpers/battery
-cp ./home/.vimrc ~/.vimrc
+mkdir ~/.config
+cp -r ./home/.config/nvim ~/.config/.
 cp ./home/.agignore ~/.agignore
 
 echo "----------------------------------------------------------------------------------"
-echo "| Ensure the following were run at some point on this machine:                   |"
-echo "| git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim |"
-echo "| Launch vim and run ':PluginInstall'                                            |"
-echo "|--------------------------------------------------------------------------------|"
-echo "| Programs:                                                                      |"
+echo "| Programs To Install:                                                           |"
 echo "| - the_silver_searcher                                                          |"
 echo "| - tmux                                                                         |"
-echo "| - vim                                                                          |"
-echo "| - ruby                                                                         |"
-echo "| - rvm                                                                          |"
+echo "| - nvim                                                                         |"
+echo "| - ranger                                                                       |"
 echo "----------------------------------------------------------------------------------"
 

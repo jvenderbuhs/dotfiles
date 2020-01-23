@@ -22,8 +22,11 @@ alias rps="rancher ps"
 alias tm="tmux -2"
 alias rit='rancher exec -it'
 alias dit='docker exec -it'
+alias vi="nvim"
+alias vim="nvim"
 
 cd ~/.ssh
 ssh-add id_rsa
 cd ~/Development
 clear
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
