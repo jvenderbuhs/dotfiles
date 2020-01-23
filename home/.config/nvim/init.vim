@@ -12,6 +12,7 @@ set ai
 set si
 set cursorline
 hi CursorLine cterm=NONE ctermbg=8 guibg=8
+set guicursor=
 
 map } :tabm +<CR>
 map { :tabm -<CR>
