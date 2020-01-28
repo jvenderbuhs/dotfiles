@@ -11,7 +11,7 @@ parse_git_branch() {
 export PS1="\W\$(parse_git_branch) $ "
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-alias r="~/Development/tools/r/r.sh"
+alias r="~/tools/r/r.sh"
 alias githead='git log | head -n 1'
 alias rngr='ranger -c'
 alias dcup="docker-compose down;rm tmp/pids/server.pid; docker-compose up"
@@ -29,4 +29,3 @@ cd ~/.ssh
 ssh-add id_rsa
 cd ~/Development
 clear
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
