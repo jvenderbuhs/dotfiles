@@ -13,6 +13,7 @@ set si
 set cursorline
 hi CursorLine cterm=NONE ctermbg=8 guibg=8
 set guicursor=
+set wrap!
 
 map } :tabm +<CR>
 map { :tabm -<CR>
@@ -38,6 +39,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'zacanger/angr.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'mechatroner/rainbow_csv'
 
 call vundle#end()
 
