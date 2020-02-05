@@ -26,6 +26,7 @@ map <C-[> :CtrlPClearCache<CR>
 map <C-n> :NERDTreeToggle<CR>
 map B :Gblame<CR>
 map <C-y> "*y
+map <C-j> :%!jq '.'<CR>
 
 set rtp+=~/.vim/bundle/Vundle.vim
 

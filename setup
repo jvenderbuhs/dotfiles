@@ -16,6 +16,7 @@ echo "| Programs To Install:                                                    
 echo "| - the_silver_searcher                                                          |"
 echo "| - tmux                                                                         |"
 echo "| - nvim                                                                         |"
+echo "| - jq                                                                           |"
 echo "| - ranger                                                                       |"
 echo "| - ruby                                                                         |"
 echo "| - rvm                                                                          |"
