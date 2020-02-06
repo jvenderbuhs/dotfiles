@@ -44,6 +44,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'mechatroner/rainbow_csv'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
+Plugin 'unblevable/quick-scope'
 
 call vundle#end()
 
