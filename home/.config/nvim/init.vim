@@ -42,6 +42,8 @@ Plugin 'zacanger/angr.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mechatroner/rainbow_csv'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-notes'
 
 call vundle#end()
 
