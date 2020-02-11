@@ -45,6 +45,8 @@ Plugin 'mechatroner/rainbow_csv'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'unblevable/quick-scope'
+Plugin 'ryanoasis/vim-devicons' " always last
+let g:airline_powerline_fonts = 1
 
 call vundle#end()
 

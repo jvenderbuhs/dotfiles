@@ -22,4 +22,8 @@ echo "| - ruby                                                                  
 echo "| - rvm                                                                          |"
 echo "| - onefetch                                                                     |"
 echo "----------------------------------------------------------------------------------"
+echo "|Install Nerd Fonts, and Set for Terminal:                                       |"
+echo "| brew tap homebrew/cask-fonts                                                   |"
+echo "| brew cask install font-hack-nerd-font                                          |"
+echo "----------------------------------------------------------------------------------"
 
