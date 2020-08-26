@@ -71,3 +71,11 @@ hi DiffAdd    cterm=BOLD ctermfg=NONE ctermbg=22
 hi DiffDelete cterm=BOLD ctermfg=NONE ctermbg=52
 hi DiffChange cterm=BOLD ctermfg=NONE ctermbg=23
 hi DiffText   cterm=BOLD ctermfg=NONE ctermbg=23
+
+" Manage auto-indenting
+set nocindent
+set nosmartindent
+set autoindent
+set indentexpr=
+filetype indent off
+filetype plugin indent off

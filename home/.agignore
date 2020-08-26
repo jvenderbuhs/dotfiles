@@ -1,8 +1,8 @@
 log/
 logs/
 images/
-stylesheets/
 node_modules/
+public/packs/
 tmp/
 *.sql
 *.csv
@@ -21,4 +21,3 @@ tmp/
 *.gif
 *.ts
 *.map
-lib/
