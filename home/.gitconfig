@@ -9,6 +9,7 @@
   pretty = format:%C(yellow)%h %C(magenta)%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s
 [core]
   excludesfile = ~/.gitignore
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [alias]
   logg = log --graph
 [pull]
