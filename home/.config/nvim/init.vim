@@ -39,6 +39,8 @@ Plugin 'ervandew/ag'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'zacanger/angr.vim'
+Plugin 'zefei/simple-dark'
+Plugin 'haishanh/night-owl.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mechatroner/rainbow_csv'
@@ -57,6 +59,7 @@ let g:ctrlp_prompt_mappings = {
   \ }
 
 let g:airline_theme='angr'
+colorscheme night-owl
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.sql,*.zip,*.html,*/site-images/*,*/node_modules/*,*/javascript/*/lib/*
 
