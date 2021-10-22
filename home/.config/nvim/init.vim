@@ -12,8 +12,17 @@ set ai
 set si
 set cursorline
 hi CursorLine cterm=NONE ctermbg=8 guibg=8
+hi DiffAdd    cterm=BOLD ctermfg=NONE ctermbg=22
+hi DiffDelete cterm=BOLD ctermfg=NONE ctermbg=52
+hi DiffChange cterm=BOLD ctermfg=NONE ctermbg=23
+hi DiffText   cterm=BOLD ctermfg=NONE ctermbg=23
 set guicursor=
 set wrap!
+
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
 
 map } :tabm +<CR>
 map { :tabm -<CR>
@@ -22,35 +31,28 @@ map [ gT
 map N :tabnew<CR>
 map H :cprev<CR>
 map L :cnext<CR>
-map <C-[> :CtrlPClearCache<CR>
-map <C-n> :NERDTreeToggle<CR>
-map B :Gblame<CR>
-map <C-y> "*y
-map <C-j> :%!jq '.'<CR>
+map <C-y> "+y
 
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'ervandew/ag'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'zacanger/angr.vim'
-Plugin 'zefei/simple-dark'
-Plugin 'haishanh/night-owl.vim'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'mechatroner/rainbow_csv'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-notes'
-Plugin 'unblevable/quick-scope'
-Plugin 'ryanoasis/vim-devicons' " always last
+call plug#begin('~/.vim/plugged')
+Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ervandew/ag'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'zacanger/angr.vim'
+Plug 'haishanh/night-owl.vim'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-fugitive'
+Plug 'mechatroner/rainbow_csv'
+Plug 'xolox/vim-misc'
+Plug 'unblevable/quick-scope'
+Plug 'kamykn/spelunker.vim'
+Plug 'ryanoasis/vim-devicons' " always last
 let g:airline_powerline_fonts = 1
+call plug#end()
 
-call vundle#end()
+map <C-[> :CtrlPClearCache<CR>
+map B :Gblame<CR>
 
 let g:ctrlp_max_files=0
 let g:ctrlp_prompt_mappings = {
@@ -65,16 +67,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.sql,*.zip,*.html,*/site-images/*,*/node_mod
 
 autocmd BufWritePre * :%s/\s\+$//e
 
-nnoremap <Up> <Nop>
-nnoremap <Down> <Nop>
-nnoremap <Left> <Nop>
-nnoremap <Right> <Nop>
-
-hi DiffAdd    cterm=BOLD ctermfg=NONE ctermbg=22
-hi DiffDelete cterm=BOLD ctermfg=NONE ctermbg=52
-hi DiffChange cterm=BOLD ctermfg=NONE ctermbg=23
-hi DiffText   cterm=BOLD ctermfg=NONE ctermbg=23
-
 " Manage auto-indenting
 set nocindent
 set nosmartindent
@@ -82,3 +74,7 @@ set autoindent
 set indentexpr=
 filetype indent off
 filetype plugin indent off
+
+" Manage Spell Check, spelunker (Zl to correct a word, Zg to add a word, ZN jump to next mis-spelled word)
+set nospell
+

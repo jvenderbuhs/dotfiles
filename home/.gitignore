@@ -1,10 +1,8 @@
 # Editor Files
-
 *.swp
 *.swo
 
 # Database
-
 *.sqlite3
 *.sqlite3-journal
 *.sql
@@ -12,11 +10,9 @@
 config/database.override.yml
 
 # Logs
-
 *.log
 
 # Uploads / Cache
-
 public/system/*
 public/themes/*
 public/javascripts/cache
@@ -25,7 +21,6 @@ public/refinery/*
 vendor/cache
 
 # Misc
-
 /.bundle
 /tmp
 tmp

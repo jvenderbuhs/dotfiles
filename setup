@@ -3,10 +3,6 @@ cp ./home/.bash_profile ~/.bash_profile
 cp ./home/.gitconfig ~/.gitconfig
 cp ./home/.gitignore ~/.gitignore
 cp ./home/.tmux.conf ~/.tmux.conf
-mkdir ~/.tmux
-cp ./home/.tmux/dev ~/.tmux/dev
-mkdir ~/.helpers
-cp ./home/.helpers/battery ~/.helpers/battery
 mkdir ~/.config
 cp -r ./home/.config/nvim ~/.config/.
 cp ./home/.agignore ~/.agignore
@@ -20,9 +16,5 @@ echo "| - jq                                                                    
 echo "| - diff-so-fancy                                                                |"
 echo "| - ruby                                                                         |"
 echo "| - rvm                                                                          |"
-echo "----------------------------------------------------------------------------------"
-echo "|Install Nerd Fonts, and Set for Terminal:                                       |"
-echo "| brew tap homebrew/cask-fonts                                                   |"
-echo "| brew cask install font-hack-nerd-font                                          |"
 echo "----------------------------------------------------------------------------------"
 

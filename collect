@@ -1,10 +1,7 @@
 #!/bin/bash
-
 cp ~/.bash_profile ./home/.bash_profile
 cp ~/.gitconfig ./home/.gitconfig
 cp ~/.gitignore ./home/.gitignore
 cp ~/.tmux.conf ./home/.tmux.conf
-cp ~/.tmux/dev ./home/.tmux/dev
-cp ~/.helpers/battery ./home/.helpers/battery
 cp -r ~/.config/nvim ./home/.config/
 cp ~/.agignore ./home/.agignore
