@@ -11,12 +11,8 @@ set tabstop=2
 set ai
 set si
 set cursorline
-hi CursorLine cterm=NONE ctermbg=8 guibg=8
-hi DiffAdd    cterm=BOLD ctermfg=NONE ctermbg=22
-hi DiffDelete cterm=BOLD ctermfg=NONE ctermbg=52
-hi DiffChange cterm=BOLD ctermfg=NONE ctermbg=23
-hi DiffText   cterm=BOLD ctermfg=NONE ctermbg=23
 set guicursor=
+set mouse=
 set wrap!
 
 nnoremap <Up> <Nop>
@@ -41,18 +37,25 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'zacanger/angr.vim'
 Plug 'haishanh/night-owl.vim'
+Plug 'elixir-editors/vim-elixir'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mechatroner/rainbow_csv'
 Plug 'xolox/vim-misc'
+Plug 'dense-analysis/ale'
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'unblevable/quick-scope'
+Plug 'nathanaelkane/vim-indent-guides'
 Plug 'kamykn/spelunker.vim'
+Plug 'mbbill/undotree'
 Plug 'ryanoasis/vim-devicons' " always last
 let g:airline_powerline_fonts = 1
 call plug#end()
 
 map <C-[> :CtrlPClearCache<CR>
-map B :Gblame<CR>
+map B :Git blame<CR>
+map F :ALEFix<CR>
+map <F5> :UndotreeToggle<CR>
 
 let g:ctrlp_max_files=0
 let g:ctrlp_prompt_mappings = {
@@ -65,16 +68,25 @@ colorscheme night-owl
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.sql,*.zip,*.html,*/site-images/*,*/node_modules/*,*/javascript/*/lib/*
 
-autocmd BufWritePre * :%s/\s\+$//e
-
-" Manage auto-indenting
+" Manage formatting and linters
+let g:ale_fixers = ['stylelint', 'eslint', 'rubocop']
+let g:ale_sign_column_always=1
+let g:airline#extensions#ale#enabled=1
+let g:strip_only_modified_lines=1
 set nocindent
 set nosmartindent
 set autoindent
 set indentexpr=
 filetype indent off
 filetype plugin indent off
+let g:indent_guides_enable_on_vim_startup = 1
 
 " Manage Spell Check, spelunker (Zl to correct a word, Zg to add a word, ZN jump to next mis-spelled word)
 set nospell
 
+hi DiffAdd      cterm=BOLD ctermfg=NONE ctermbg=22
+hi DiffDelete   cterm=BOLD ctermfg=NONE ctermbg=52
+hi DiffChange   cterm=BOLD ctermfg=NONE ctermbg=23
+hi DiffText     cterm=BOLD ctermfg=NONE ctermbg=23
+hi CursorLine   cterm=BOLD ctermbg=0 guibg=0
+hi CursorLineNr cterm=BOLD ctermbg=0 guibg=0
