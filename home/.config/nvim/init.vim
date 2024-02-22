@@ -2,6 +2,7 @@ set autoread
 set number
 set history=500
 set ruler
+set colorcolumn=140
 set hlsearch
 syntax enable
 set expandtab
@@ -28,11 +29,16 @@ map N :tabnew<CR>
 map H :cprev<CR>
 map L :cnext<CR>
 map <C-y> "+y
+map <C-j> <C-d>zz
+map <C-k> <C-u>zz
 
+" NEED TO ALSO INSTALL: ripgrep
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/ag'
+" Plug 'ctrlpvim/ctrlp.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'zacanger/angr.vim'
@@ -57,11 +63,13 @@ map B :Git blame<CR>
 map F :ALEFix<CR>
 map <F5> :UndotreeToggle<CR>
 
-let g:ctrlp_max_files=0
-let g:ctrlp_prompt_mappings = {
-  \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
-  \ 'AcceptSelection("t")': ['<cr>'],
-  \ }
+" let g:ctrlp_max_files=0
+" let g:ctrlp_prompt_mappings = {
+"   \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
+"   \ 'AcceptSelection("t")': ['<cr>'],
+"   \ }
+map <C-p> :Telescope find_files theme=ivy<cr>
+map <C-f> :Telescope live_grep theme=ivy<cr>
 
 let g:airline_theme='angr'
 colorscheme night-owl
