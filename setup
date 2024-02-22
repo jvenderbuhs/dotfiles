@@ -1,5 +1,7 @@
 #!/bin/bash
 cp ./home/.bash_profile ~/.bash_profile
+cp ./home/.zshenv ~/.zshenv
+cp ./home/.zshrc ~/.zshrc
 cp ./home/.gitconfig ~/.gitconfig
 cp ./home/.gitignore ~/.gitignore
 cp ./home/.tmux.conf ~/.tmux.conf
@@ -15,6 +17,7 @@ echo "| - neovim                                                                
 echo "| - diff-so-fancy (sudo add-apt-repository ppa:aos1/diff-so-fancy)               |"
 echo "| - ruby                                                                         |"
 echo "| - rvm                                                                          |"
+echo "| - ripgrep                                                                      |"
 echo "----------------------------------------------------------------------------------"
 echo "Run:"
 echo " - sh -c 'curl -fLo \"${XDG_DATA_HOME:-$HOME/.local/share}\"/nvim/site/autoload/plug.vim --create-dirs \\"

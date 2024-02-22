@@ -1,5 +1,7 @@
 #!/bin/bash
 cp ~/.bash_profile ./home/.bash_profile
+cp ~/.zshenv ./home/.zshenv
+cp ~/.zshrc ./home/.zshrc
 cp ~/.gitconfig ./home/.gitconfig
 cp ~/.gitignore ./home/.gitignore
 cp ~/.tmux.conf ./home/.tmux.conf
