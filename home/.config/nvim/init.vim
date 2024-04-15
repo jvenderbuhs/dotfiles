@@ -16,10 +16,10 @@ set guicursor=
 set mouse=
 set wrap!
 
-nnoremap <Up> <Nop>
-nnoremap <Down> <Nop>
-nnoremap <Left> <Nop>
-nnoremap <Right> <Nop>
+nnoremap <Up> :wincmd k<CR>
+nnoremap <Down> :wincmd j<CR>
+nnoremap <Left> :wincmd h<CR>
+nnoremap <Right> :wincmd l<CR>
 
 map } :tabm +<CR>
 map { :tabm -<CR>
@@ -39,11 +39,11 @@ Plug 'ervandew/ag'
 " Plug 'ctrlpvim/ctrlp.vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
+Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'zacanger/angr.vim'
 Plug 'haishanh/night-owl.vim'
-Plug 'elixir-editors/vim-elixir'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mechatroner/rainbow_csv'
@@ -58,9 +58,7 @@ Plug 'ryanoasis/vim-devicons' " always last
 let g:airline_powerline_fonts = 1
 call plug#end()
 
-map <C-[> :CtrlPClearCache<CR>
 map B :Git blame<CR>
-map F :ALEFix<CR>
 map <F5> :UndotreeToggle<CR>
 
 " let g:ctrlp_max_files=0
